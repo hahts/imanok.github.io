@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>imanok</title>
+    <script src="js/konami.js"></script>
+    <style>
+    	body{
+    		background-color:black;
+    	}
+
+    	h1{
+    		color:rgb(32,194,14);
+    		font-size:125px;
+    		text-align:center;
+    		font-family:hacker;
+    	}
+    	@font-face{
+    		font-family:hacker;
+    		src: url(HACKED.ttf);
+    	}
+    </style>
+  </head>
+  <body>
+  <h1>Enter code to unlock more</h1>
+  <script type="text/javascript">
+if ( window.addEventListener ) {  
+  var state = 0, konami = [38,38,40,40,37,39,37,39,66,65];  
+  window.addEventListener("keydown", function(e) {  
+    if ( e.keyCode == konami[state] ) state++;  
+    else state = 0;  
+    if ( state == 10 )  
+      window.location = "video.mp4";
+    }, true);  
+}  
+</script>
+  </body>
+</html>
